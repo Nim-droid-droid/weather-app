@@ -5,13 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link href="../dist/output.css" rel="stylesheet">
   <title>Weather Application</title>
   <script src="index.js" defer></script>
 </head>
-<body>
-  <h1 class="text-5xl font-bold underline">
-    Weather App
-  </h1>
+<body class=" flex">
+  
+  <div id="container" class=" flex flex-wrap  w-screen justify-center my-10 bg-yellow-400">
+    <form action="" class="bg-pink-400">
+      <!-- <h1 class="text-5xl font-bold underline text-red-700 bg-blue-400">
+        Weather App
+      </h1> -->
+
+      <!-- <header>Weather</header> -->
+      <label for="searchInput" class="text-5xl font-bold text-blue-500 py-2.5	ml-24  inline-block mt-2">Weather</label>
+      <input type="text" placeholder=" Location" id="searchInput" class="  py-2.5 ml-6 inline-block w-96 h-10 my-4 mt-0">
+      <button type="submit" class="searchBtn btn  h-10 w-20" id="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+
+    <main id="renderContent" class=" py-10 w-screen border-2 border-rose-500 ">
+      <nav class="flex justify-evenly items-center bg-indigo-400 border-2 border-white">
+        <ul class="flex justify-evenly items-center gap-x-16 h-10">
+          <li class=" ">
+            <a href="#">
+              <span>#</span>
+            </a>
+          </li>
+          <li class=" ">
+            <a href="#">
+              <span>#</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="  flex-col justify-center items-center rounded overflow-hidden bg-orange-400 w-full min-h-screen ">
+        <div class="bg-fuchsia-500 h-12 w-6 rounded grow p-20"></div>
+        <div class=" flex">
+          <div class="bg-green-500 h-12 w-6 rounded "></div>
+          <div class="bg-blue-500 h-12 w-6"></div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
 </body>
 </html>
